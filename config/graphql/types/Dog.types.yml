@@ -1,0 +1,9 @@
+Dog:
+  type: object
+  config:
+    description: "Dog type"
+    fields:
+      id:
+        type: "String"
+      name:
+        type: "String"

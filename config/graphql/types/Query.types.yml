@@ -1,0 +1,17 @@
+Query:
+  type: object
+  config:
+    description: "Root query type"
+    fields:
+      allDogs:
+        type: "[Dog]"
+#        resolve: "@=resolver('allDogs', [args])"
+      dog:
+        type: "Dog"
+#        resolve: "@=resolver('dog', [args['id']])"
+#        args:
+#          id:
+#            description: "Dog Id"
+#            type: "String!"
+      apartment:
+        type: "Apartment"

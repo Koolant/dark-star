@@ -25,3 +25,12 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    App\Resolver\DogResolver:
+        tags:
+          - { name: overblog_graphql.resolver, alias: "allDogs", method: "resolveAllDogs" }
+          - { name: overblog_graphql.resolver, alias: "dog", method: "resolveDog" }
+
+    App\Mutation\DogMutator:
+        tags:
+          - { name: overblog_graphql.mutation, alias: "newDog", method: "mutateNewDog" }

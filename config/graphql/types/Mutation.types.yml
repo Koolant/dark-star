@@ -1,0 +1,10 @@
+#Mutation:
+#  type: object
+#  config:
+#    description: "All mutations"
+#    fields:
+#      createDog:
+#        args:
+#          name: "String!"
+#        type: "Dog"
+#        resolve: "@=mutation('newDog', [args['name']])"
